@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170912021947) do
+ActiveRecord::Schema.define(version: 20170912023536) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20170912021947) do
     t.string "name"
     t.integer "lft", null: false
     t.integer "rgt", null: false
-    t.integer "parent_id", null: false
+    t.integer "parent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["lft"], name: "index_categories_on_lft"

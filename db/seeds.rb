@@ -32,6 +32,7 @@ CATEGORY_C = {
   ActiveRecord::Base.transaction do
     root_category = Category.create!(name: cate[:category])
 
+    binding.pry
     cate[:weapons_with_categories].each do |weapons_with_category|
       child_category = root_category.children.create!(name: weapons_with_category[:category])
 
