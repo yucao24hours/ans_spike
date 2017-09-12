@@ -1,5 +1,5 @@
 - @root_categories.each do |root_category|
-  h2= "#{root_category.name}(#{root_category.children.count})"
+  h2= "#{root_category.name}(#{weapon_count_of(root_category)})"
   - root_category.children.each do |child_category|
     h3= "#{child_category.name}(#{child_category.weapons.count})"
     - child_category.weapons.each do |weapon|
